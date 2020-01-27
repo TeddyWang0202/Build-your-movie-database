@@ -17,5 +17,5 @@ Here I use Python to requests the data and use <code>json</code> package to pars
     
 Also, there are some takeaways I encounter and feel helpful for first-time users.
 1. When connect to your local database, most of the default setting is \{"user":"root"\} and \{"host":"localhost"\}. You can alter the server password to '' to make it easier to access.
-2. When insert/query the data, always end with <code>conn.commit()</code>(connection object between Python and MySQL) to make the result really implemented in MySQL 
+2. When insert/query the data, always end with <code>conn.commit()</code>(<code>conn</code> is a connection object between Python and MySQL) to make the result really implemented in MySQL. When insert/query fails, use <code>conn.rollback()</code> to redo everything before the execution, making less mess in your table.
 3. When some errors or bugs happen, Python kernel might stuck and need to restart the kernel.(here I still don't know other solutions)
