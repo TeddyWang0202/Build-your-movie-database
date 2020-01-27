@@ -1,5 +1,5 @@
 # Build-your-movie-database
-Using public API (here is IMDb) to request data and build the pipeline in Python to store the data into my local MySQL sever. A quick demonstration of how to use in Python and summary of some bugs and concepts to utilize.
+Using public API (here is IMDb) to request data and build the pipeline in Python to store the data into my local MySQL sever.<br>A quick demonstration of how to use in Python and summary of some bugs and concepts to utilize.</br>
 <br>***ALL the code is in this [jupyter notebook](https://github.com/TeddyWang0202/Build-your-movie-database/blob/master/Python_SQL_IMDb.ipynb)***</br>
 
 ### Why do we need API when we could use requests and <code>bs4</code> to retrieve data?
