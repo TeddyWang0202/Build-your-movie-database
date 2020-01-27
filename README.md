@@ -12,7 +12,7 @@ There is always sometime we need to fetch data from the websites, but retrieving
     2. What data does the request return. Most of them are in json format, and it goes to the next section.
 
 
-### After we get the data from API, how to store into your local database?
+### After we get the data from API, how to store them into your local database?
 Here I use Python to requests the data and use <code>json</code> package to parse the requested data. After parsing, use <code>mysql-connector-python</code>(I encountered some bugs in <code>mysql-connector</code>, so I don't suggest to use it.) to build the link between Python and MySQL. This package provides methods that you just need to create the connection object and cursor object, and you could do everything the same as you do in your MySQL query.
 1. import package <code>import mysql.connector</code>
 2. create connection object <code>conn = mysql.connector.connect()</code>
