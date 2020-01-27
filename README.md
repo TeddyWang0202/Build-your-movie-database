@@ -19,6 +19,7 @@ Here I use Python to requests the data and use <code>json</code> package to pars
 3. create cursor object <code>mycursor = conn.cursor()</code>
 4. execute query (Create table, insert, query, etc) <code>cursor.execute</code>
 ![Final result](/img/result.png)
+
 Also, there are some takeaways I encounter and feel helpful for first-time users.
 1. When connect to your local database, most of the default setting is \{"user":"root"\} and \{"host":"localhost"\}. You can alter the server password to <code>''</code> to make it easier to access.
 2. When insert/query the data, always end with <code>conn.commit()</code>(<code>conn</code> is a connection object between Python and MySQL) to make the result really implemented in MySQL. When insert/query fails, use <code>conn.rollback()</code> to redo everything before the execution, making less mess in your table.
