@@ -13,7 +13,7 @@ There is always sometime we need to fetch data from the websites, but parsing we
 
 
 ### After we get the data using API, how to store into your local database?
-Here I use Python to requests the data and use <code>json</code> package to parse the requested data. After parsing, use <code>mysql-connector-python</code>(I encountered some bugs in <code>mysql-connector</code>, so I don't suggest to use it.) to build the link between Python and MySQL. This package provides method that you just need to create the cursor object and do everything the same as you do in your MySQL query.
+Here I use Python to requests the data and use <code>json</code> package to parse the requested data. After parsing, use <code>mysql-connector-python</code>(I encountered some bugs in <code>mysql-connector</code>, so I don't suggest to use it.) to build the link between Python and MySQL. This package provides methods that you just need to create the connection object and cursor object, and you could do everything the same as you do in your MySQL query.
     
 Also, there are some takeaways I encounter and feel helpful for first-time users.
 1. When connect to your local database, most of the default setting is \{"user":"root"\} and \{"host":"localhost"\}. You can alter the server password to '' to make it easier to access.
