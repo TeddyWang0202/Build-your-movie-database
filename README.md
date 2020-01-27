@@ -7,8 +7,8 @@ There is always sometime we need to fetch data from the website, and parsing web
 1. Finding whether there is a API you could leverage, and I recommend [API list](https://apilist.fun/). 
 2. Here because I want to build the movie database, so I use [IMDb's API](http://www.omdbapi.com/).
 3. After finding the API, then explore it, to know
-  1. What is the url you need to request to get the data. Some of them might need key, so register.(OMDb provides free key)
-  2. What data does the request return. Most of them are in json format, and it goes to the next section.
+    1. What is the url you need to request to get the data. Some of them might need key, so register.(OMDb provides free key)
+    2. What data does the request return. Most of them are in json format, and it goes to the next section.
 
 
 
