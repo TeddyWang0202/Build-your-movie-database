@@ -18,7 +18,8 @@ Here I use Python to requests the data and use <code>json</code> package to pars
 2. create connection object <code>conn = mysql.connector.connect()</code>
 3. create cursor object <code>mycursor = conn.cursor()</code>
 4. execute query (Create table, insert, query, etc) <code>cursor.execute</code>
-![Final result](/img/result.png){:height="10%" width="10%"}
+![Final result]<img src="./result.png" width="100" height="100">
+#(/img/result.png){:height="10%" width="10%"}
 
 Also, there are some takeaways I encounter and feel helpful for first-time users.
 1. When connect to your local database, most of the default setting is \{"user":"root"\} and \{"host":"localhost"\}. You can alter the server password to <code>''</code> to make it easier to access.
