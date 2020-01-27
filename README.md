@@ -3,12 +3,12 @@ Using public API (here is IMDb) to request data and build the pipeline in Python
 <br>***ALL the code is in this [jupyter notebook](https://github.com/TeddyWang0202/Build-your-movie-database/blob/master/Python_SQL_IMDb.ipynb)***</br> 
 
 ### Why do we need API when we could use <code>requests</code> and <code>bs4</code> to retrieve data?
-There is always sometime we need to fetch data from the websites, but retrieving web data by iterative <code>requests</code> and then parsing by <code>bs4</code> would be painful. First of all, the HTML data might be hard to parse or even some of the data are generated dynamically, making parsing one level harder. Secondly, you always have to wait the whole HTML to be rendered by web server and then catch the data to do further parsing and digesting, which is not efficient. Doing like that is a more general way to scrape data, though. However, **when there is a more convinent way to request data, why bother yourself to pretend as a user and scrape data from the original web page?** If a website provides its own API(Not many do, thou), we could leverage it and get the data more efficiently. Therefore, below is how we use API.
+There is always sometime we need to fetch data from the websites, but retrieving web data by iterative <code>requests</code> and then parsing by <code>bs4</code> would be painful. First of all, the HTML data might be hard to parse or even some of the data are generated dynamically, making parsing one level harder. Secondly, you always have to wait the whole HTML to be rendered by web server and then catch the data to do further parsing and digesting, which is not efficient. Doing like that is a more general way to scrape data, though. However, **when there is a more convinent way to request data, why bother yourself to pretend as a user and then scrape data from the original web page?** If a website provides its own API(Not many do, thou), we could leverage it and get the data more efficiently. Therefore, below is how we use API.
 
-1. Finding whether there is a API you could leverage, and I recommend [API list](https://apilist.fun/) to look up for. <img src="./img/apilist.png" width="500" height="500">
+1. Find whether there is a API you could leverage, and I recommend [API list](https://apilist.fun/) to look up for. <img src="./img/apilist.png" width="500" height="500">
 2. Here because I want to build the IMDb movie database, so I use [OMDb's API](http://www.omdbapi.com/).
-3. After finding the API, then explore it, to know:
-    1. What is the URL you need to request to get the data. Some of them might need key, so register it. (OMDb provides free key)
+3. After finding the API, then explore it. To know:
+    1. What is the URL you need to send requests to get the data. Some of them might need key, so register it. (OMDb provides free key)
     2. What data does the request return. Most of them are in json format, and it goes to the next section.
 
 
