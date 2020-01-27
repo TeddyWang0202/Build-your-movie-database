@@ -1,6 +1,6 @@
 # Build-your-movie-database
-Using public API (here is IMDb) to request data and build the pipeline in Python to store the data into my local MySQL sever. Example of how to use in Python and summary of some bugs and concepts to utilize.
-***ALL the code is in this [jupyter notebook](https://github.com/TeddyWang0202/Build-your-movie-database/blob/master/Python_SQL_IMDb.ipynb)***
+Using public API (here is IMDb) to request data and build the pipeline in Python to store the data into my local MySQL sever. A quick demonstration of how to use in Python and summary of some bugs and concepts to utilize.
+<br>***ALL the code is in this [jupyter notebook](https://github.com/TeddyWang0202/Build-your-movie-database/blob/master/Python_SQL_IMDb.ipynb)***</br>
 
 ### Why do we need API when we could use requests and <code>bs4</code> to retrieve data?
 There is always sometime we need to fetch data from the website, and parsing web data by iterative requests and then parsing by <code>bs4</code> would be painful. First of all, the html data might be hard to parse or even some of the data are generated dynamically, making parsing one level harder. Secondly, you always have to wait the whole data to be rendered by web server and then catch the data to do further parsing and digesting. It's a more general way to scrape data, though. However, **when there is a more convinent tool to request data, why bother yourself to pretend as a user to scrape data from the original web page?** If a website provides its own API(Not many do, thou), we should always leverage it and get the data more efficiently. Therefore, below is how we use API.
