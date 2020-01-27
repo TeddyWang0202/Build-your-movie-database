@@ -17,7 +17,7 @@ Here I use Python to requests the data and use <code>json</code> package to pars
 1. import package <code>import mysql.connector</code>
 2. create connection object <code>conn = mysql.connector.connect()</code>
 3. create cursor object <code>mycursor = conn.cursor()</code>
-4. execute query (create table, insert, query, etc) <code>cursor.execute</code>
+4. execute query (create table, insert, query, etc) <code>cursor.execute()</code>
 5. Final result:
 <br><img src="./img/result.png" width="500" height="500"> </br>
 
