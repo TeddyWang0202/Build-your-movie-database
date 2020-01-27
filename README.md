@@ -5,7 +5,7 @@ Using public API (here is IMDb) to request data and build the pipeline in Python
 ### Why do we need API when we could use <code>requests</code> and <code>bs4</code> to retrieve data?
 There is always sometime we need to fetch data from the websites, but parsing web data by iteratively <code>requests</code> and then parsing by <code>bs4</code> would be painful. First of all, the html data might be hard to parse or even some of the data are generated dynamically, making parsing one level harder. Secondly, you always have to wait the whole data to be rendered by web server and then catch the data to do further parsing and digesting. It's a more general way to scrape data, though. However, **when there is a more convinent way to request data, why bother yourself to pretend as a user and scrape data from the original web page?** If a website provides its own API(Not many do, thou), we could leverage it and get the data more efficiently. Therefore, below is how we use API.
 
-1. Finding whether there is a API you could leverage, and I recommend [API list](https://apilist.fun/) to look up for. ![APILIST](/img/apilist.png){:height="50%" width="50%"}
+1. Finding whether there is a API you could leverage, and I recommend [API list](https://apilist.fun/) to look up for. <img src="./img/apilist.png" width="500" height="500">
 2. Here because I want to build the IMDb movie database, so I use [OMDb's API](http://www.omdbapi.com/).
 3. After finding the API, then explore it, to know:
     1. What is the URL you need to request to get the data. Some of them might need key, so register it. (OMDb provides free key)
@@ -18,8 +18,7 @@ Here I use Python to requests the data and use <code>json</code> package to pars
 2. create connection object <code>conn = mysql.connector.connect()</code>
 3. create cursor object <code>mycursor = conn.cursor()</code>
 4. execute query (Create table, insert, query, etc) <code>cursor.execute</code>
-![Final result]<img src="./img/result.png" width="100" height="100">
-#(/img/result.png){:height="10%" width="10%"}
+<br> [Result]<img src="./img/result.png" width="500" height="500"> </br>
 
 Also, there are some takeaways I encounter and feel helpful for first-time users.
 1. When connect to your local database, most of the default setting is \{"user":"root"\} and \{"host":"localhost"\}. You can alter the server password to <code>''</code> to make it easier to access.
